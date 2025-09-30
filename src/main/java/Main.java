@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
@@ -44,7 +43,5 @@ public class Main {
 
         System.out.println("\nDisplay the customer String");
         System.out.println(String);
-
-
     }
 }
