@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner myScanner = new Scanner(System.in);
 
-        System.out.println("Please provide the following information:");
+        System.out.println("Please provide the following String:");
 
         System.out.print("Full name: ");
         String fullName = myScanner.nextLine();
@@ -32,5 +32,19 @@ public class Main {
 
         System.out.print("Shipping Zip: ");
         String shippingZip = myScanner.nextLine();
+
+        StringBuilder String = new StringBuilder();
+        String.append(fullName).append("\n");
+        String.append("Billing Address:\n");
+        String.append(billingStreet).append("\n");
+        String.append(billingCity).append(", ").append(billingState).append(" ").append(billingZip).append("\n");
+        String.append("Shipping Address:\n");
+        String.append(shippingStreet).append("\n");
+        String.append(shippingCity).append(", ").append(shippingState).append(" ").append(shippingZip).append("\n");
+
+        System.out.println("\nDisplay the customer String");
+        System.out.println(String);
+
+
     }
 }
